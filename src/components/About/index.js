@@ -1,6 +1,7 @@
-import { faAngular, faCss3, faGitAlt, faGithub, faHtml5, faJsSquare, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faJava, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react"
+import Loader from "react-loaders";
 import { AnimatedLetters } from "../AnimatedLetters"
 import "./index.scss"
 
@@ -15,6 +16,7 @@ export const About = () => {
     }, [])
 
     return(
+        <>
         <div className="container about-page">
             <div className="text-zone">
                 <h1>
@@ -37,7 +39,7 @@ export const About = () => {
             <div className="stage-cube-cont">
                 <div className="cubespinner">
                     <div className="face1">
-                        <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+                        <FontAwesomeIcon icon={faJava} color="#DD0031" />
                     </div>
                     <div className="face2">
                         <FontAwesomeIcon icon={faHtml5} color="#F06529" />
@@ -58,5 +60,7 @@ export const About = () => {
             </div>
 
         </div>
+        <Loader type="pacman" />
+        </>
     )
 }
