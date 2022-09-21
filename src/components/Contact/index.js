@@ -1,17 +1,31 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Loader from "react-loaders"
 import { AnimatedLetters } from "../AnimatedLetters"
 import "./index.scss"
+import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
     
     const [letterClass, setLetterClass] = useState('text-animate');
+    const refForm = useRef();
 
     useEffect(() => {
         setTimeout (() => {
             return setLetterClass('text-animate-hover')
         }, 3000)
     }, [])
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_gdxyvey', 'template_54uqsro', refForm.current, 'yODvRgSZA2Iu8VSDO')
+          .then((result) => {
+              alert('Message successfully sent!');
+              window.location.reload(false)
+          }, (error) => {
+              alert('Failed to send the message, please try again');
+          });
+      };
 
     return(
         <>
@@ -31,7 +45,7 @@ export const Contact = () => {
                         can contact me with the form below.  
                     </p>
                     <div className="contact-form">
-                        <form>
+                         <form ref={refForm} onSubmit={sendEmail}> 
                             <ul>
                                 <li className="half"> 
                                     <input type="text" name="name" placeholder="Name" required /> 
@@ -46,7 +60,7 @@ export const Contact = () => {
                                     <textarea placeholder="Message" name="message" required></textarea>
                                 </li>
                                 <li>
-                                    <input type="submit" className="flat-button" value="Send" />
+                                    <input type="submit" className="flat-button" value="SEND" />
                                 </li>
                             </ul>
                         </form>

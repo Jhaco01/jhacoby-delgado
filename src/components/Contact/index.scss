@@ -69,6 +69,14 @@
             border: 1px solid #ffd700;
             float: right;
             border-radius: 4px;
+            transition: all 0.5s;
+
+            &:hover{
+                background: #e4c303e1;
+                color: #115173;
+                cursor: pointer;
+                padding: 8px 12px;
+            }
 
         }
 
