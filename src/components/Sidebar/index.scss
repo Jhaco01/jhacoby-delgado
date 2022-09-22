@@ -90,11 +90,12 @@
             }
         }
 
-        a.active {
-            svg {
-                color: #ffd700;
+        a.portfolio-link {
+            &::after{
+                content: 'PORTFOLIO';
             }
         }
+
     }
 
     ul {
