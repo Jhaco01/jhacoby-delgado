@@ -12,7 +12,7 @@
     h1{
 
         color: #fff;
-        font-size: 53px;
+        font-size: 4.5vw;
         margin: 0;
         font-family: 'Coolvetica';
         font-weight: 400;
@@ -21,10 +21,10 @@
             content: '<h1>';
             font-family: 'La Belle Aurore';
             color: #ffd700;
-            font-size: 18px;
+            font-size: 1.7vw;
             position: absolute;
-            margin-top: -40px;
-            left: 15px;
+            margin-top: -5%;
+            left: -1%;
             opacity: 0.6;
         }
 
@@ -32,18 +32,18 @@
             content: '<h1>';
             font-family: 'La Belle Aurore';
             color: #ffd700;
-            font-size: 18px;
+            font-size: 1.7vw;
             position: absolute;
-            margin-top: 18px;
-            margin-left: 20px;
+            margin-top: 7%;
+            margin-left: 5%;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
 
         }
 
         img{
-            width: 32px;
-            margin-left: 20px;
+            width: 3vw;
+            margin-left: 3%;
             opacity: 0;
             height: auto;
             animation: rotateIn 1s linear both;
@@ -56,24 +56,24 @@
 
     h2 {
         color: #8d8d8d;
-        margin-top: 20px;
+        margin-top: 2%;
         font-weight: 400;
-        font-size: 11px;
+        font-size: 1.1vw;
         font-family: sans-serif;
-        letter-spacing: 3px;
+        letter-spacing: 0.2vw;
         animation: fadeIn 1s 1.8s backwards;
     }
 
     .flat-button {
         color: #ffd700;
-        font-size: 13px;
+        font-size: 0.95vw;
         font-weight: 400;
-        letter-spacing: 4px;
+        letter-spacing: 0.3vw;
         font-family: sans-serif;
         text-decoration: none;
-        padding: 10px 18px;
+        padding: 2% 3.2%;
         border: 1px solid #ffd700;
-        margin-top: 25px;
+        margin-top: 5%;
         float: left;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
@@ -85,4 +85,47 @@
 
     }
 
+}
+
+@media screen and (max-width: 390px) {
+    .text-zone{
+        top: 45% !important;
+        margin-left: 10%;
+        width: 68% !important;
+        
+
+        h1{            
+            font-size: 11vw;
+        
+            &::before {
+                font-size: 7vw;
+                margin-top: -10% !important;
+                
+                
+            }
+    
+            &::after {            
+                font-size: 6vw;                
+            }
+    
+            img{
+                width: 7vw;
+            }
+        
+        }
+    
+        h2 {
+            font-size: 4vw;
+            letter-spacing: 0.8vw;
+            margin-top: 8%;           
+        }
+    
+        .flat-button {        
+            font-size: 4vw;            
+            letter-spacing: 1vw;
+            padding: 4% 6.3% !important;            
+            margin-top: 10%;
+            margin-left: 10%;                        
+        }
+    }
 }

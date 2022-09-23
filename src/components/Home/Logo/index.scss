@@ -1,7 +1,7 @@
 .logo-container {
     z-index: 0;
-    width: 400px;
-    height: 609px;
+    width: 25%;
+    height: auto;
     position: absolute;
     top: 0;
     right: 15%;
@@ -35,4 +35,10 @@
 .svg-container {
     stroke: #ffd700;
     stroke-width: 10px;
+}
+
+@media screen and (max-width: 350px) {
+    .logo-container{
+        display: none;
+    }    
 }
