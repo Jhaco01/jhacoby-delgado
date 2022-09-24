@@ -1,5 +1,7 @@
 .home-page {
 
+    min-height: 538px;
+
     .text-zone {
         position: absolute;
         left: 10%;
@@ -87,7 +89,49 @@
 
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 320px) {
+    .text-zone{
+        margin-left: 15%;
+        width: 68% !important;
+
+        h1{            
+            font-size: 9vw;
+        
+            &::before {
+                font-size: 6vw;
+                margin-top: -12% !important;
+                
+                
+            }
+    
+            &::after {            
+                font-size: 5vw;                
+            }
+    
+            img{
+                width: 5.9vw;
+            }
+        
+        }
+    
+        h2 {
+            font-size: 4vw;
+            letter-spacing: 0.55vw;
+            margin-top: 8%;           
+        }
+    
+        .flat-button {        
+            font-size: 3vw;            
+            letter-spacing: 0.7vw;
+            padding: 3% 5% !important;            
+            margin-top: 8%;
+            margin-left: 8%;                        
+        }
+
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
     .text-zone{
         top: 45% !important;
         margin-left: 10%;
@@ -126,6 +170,86 @@
             padding: 4% 6.3% !important;            
             margin-top: 10%;
             margin-left: 10%;                        
+        }
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 690px) {
+    
+    .text-zone{
+        top: 45% !important;
+        margin-left: 10%;
+        width: 68% !important;
+        
+
+        h1{            
+            font-size: 7vw;
+        
+            &::before {
+                font-size: 4vw;                                
+                
+            }
+    
+            &::after {            
+                font-size: 4vw;                
+            }
+    
+            img{
+                width: 5vw;
+            }
+        
+        }
+    
+        h2 {
+            font-size: 3vw;
+            letter-spacing: 0.55vw;
+            margin-top: 8%;           
+        }
+    
+        .flat-button {        
+            font-size: 2.5vw;            
+            letter-spacing: 0.6vw;
+            padding: 3% 4% !important;            
+            margin-top: 5%;
+            margin-left: 5%;                        
+        }
+    }   
+
+}
+
+@media screen and (min-width: 691px) and (max-width: 980px) {
+    .text-zone{                
+
+        h1{            
+            font-size: 6vw;
+        
+            &::before {
+                font-size: 3vw;                                
+                
+            }
+    
+            &::after {            
+                font-size: 3vw;                
+            }
+    
+            img{
+                width: 3.5vw;
+            }
+        
+        }
+    
+        h2 {
+            font-size: 2vw;
+            letter-spacing: 0.35vw;
+            margin-top: 3%;           
+        }
+    
+        .flat-button {        
+            font-size: 1.5vw;            
+            letter-spacing: 0.3vw;
+            padding: 2% 3% !important;            
+            margin-top: 2%;
+            margin-left: 2%;                        
         }
     }
 }
