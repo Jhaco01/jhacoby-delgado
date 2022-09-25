@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "./static/css/main.199e7380.css",
+    "main.js": "./static/js/main.52df641c.js",
+    "static/js/787.008613b8.chunk.js": "./static/js/787.008613b8.chunk.js",
+    "static/media/img3.png": "./static/media/img3.051bbc9ccaadabd9df51.png",
+    "static/media/img1.png": "./static/media/img1.9f12168d94e8f38ae586.png",
+    "static/media/img2.png": "./static/media/img2.2d4271103e6da3e180c3.png",
+    "static/media/img4.png": "./static/media/img4.070992117e6e83807012.png",
+    "static/media/logo-s.png": "./static/media/logo-s.2e286b86888f169ad2fa.png",
+    "static/media/img5.png": "./static/media/img5.5e6f456250638497c082.png",
+    "static/media/helvetica-neu.ttf": "./static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff2": "./static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/logo_sub.png": "./static/media/logo_sub.a91068e39f4fa17a2dc7.png",
+    "static/media/CoolveticaRg-Regular.woff2": "./static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "./index.html",
+    "main.199e7380.css.map": "./static/css/main.199e7380.css.map",
+    "main.52df641c.js.map": "./static/js/main.52df641c.js.map",
+    "787.008613b8.chunk.js.map": "./static/js/787.008613b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.199e7380.css",
+    "static/js/main.52df641c.js"
+  ]
+}
