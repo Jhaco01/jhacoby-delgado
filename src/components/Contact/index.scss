@@ -135,3 +135,16 @@
     }
     
 }
+
+@media screen and (max-width: 320px) {
+
+    .contact-page{
+        margin-left: -4%;
+    
+        ul li.half{
+            width: 100% !important;                            
+            float: none !important;
+        }            
+    }
+
+}

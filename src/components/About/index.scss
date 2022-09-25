@@ -115,25 +115,38 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 450px) and (min-width: 300px) {
     .container.about-page{
         
         .stage-cube-cont {                        
             width: 100%;
             left: 10%;              
         }
-
-        .cubespinner {            
-            transform-origin: 60px 60px 0;            
         
-            div {
-                width: 150px;
-                height: 150px;
-            }
-        }
 
         .text-zone{
             margin-top: 75%;
+
+            h1{
+                margin-left: 10%;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container.about-page{
+        
+        .stage-cube-cont {                        
+            width: 100%;
+            left: 10%; 
+            top: 120vh;             
+        }
+        
+
+        .text-zone{
+            margin-top: 2%;
 
             h1{
                 margin-left: 10%;
